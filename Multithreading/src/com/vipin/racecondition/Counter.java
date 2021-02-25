@@ -7,8 +7,8 @@ public class Counter {
     public Long incAndGet() {
         synchronized (this) {
             this.count++;
+            return this.count;
         }
-        return this.count;
 
     }
 
